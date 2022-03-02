@@ -1,0 +1,29 @@
+main {
+    margin: auto;
+    width: 50%;
+}
+
+#recent-container {
+    margin: auto;
+    width: 50%;
+    padding-top: 20px;
+}
+
+#recent-city {
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#recent-1, #recent-2, #recent-3, #recent-4, #recent-5, #recent-6, #recent-7, #recent-8, #recent-9 {
+    padding: 17px;
+    border-bottom: 2px solid black;
+}
+
+#recent-date-1, #recent-date-2, #recent-date-3, #recent-date-4, #recent-date-5, #recent-date-6, #recent-date-7, #recent-date-8, #recent-date-9 {
+    float: right;
+    color: #00bcd4;
+ 
+
+} 

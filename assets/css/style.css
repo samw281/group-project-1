@@ -1,0 +1,17 @@
+header {
+    height: 40px;
+    padding: 0 5%;
+}
+
+#search-btn, #clear-btn {
+    height: 30px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+/* #event-1:hover, #event-2:hover, #event-3:hover, #event-4:hover, #event-5:hover, #event-6:hover, #event-7:hover, #event-8:hover, #event-9:hover {
+    border: 2px solid #00bcd4;
+    background-color: white;
+    color: black; 
+
+} */

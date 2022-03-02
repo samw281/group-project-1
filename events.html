@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/events.css" />
+    <script
+      src="https://kit.fontawesome.com/d88746a44a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="flex bg-cyan-500 justify-center">
+      <h1 class="text-3xl">Events</h1>
+    </header>
+    <!-- header end -->
+
+    <!-- back button start -->
+    <a class="text-cyan-500 text-xl" href="./index.html">
+      <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+    <!-- back button end -->
+
+    <!-- main content start -->
+    <main>
+      <form id="search-form" class="flex-col">
+        <h2 class="text-cyan-500">Search For A City:</h2>
+        <input
+          class="border-2"
+          type="text"
+          placeholder="City Name"
+          id="city-name"
+        />
+        <button
+          type="submit"
+          id="search-btn"
+          class="bg-cyan-500 rounded-md hover:text-white hover:bg-cyan-700"
+        >
+          Search
+        </button>
+      </form>
+      <div
+        id="concerts-container"
+        class="grid gap-4 grid-cols-3 grid-rows-3 pt-5"
+      ></div>
+    </main>
+    <!-- main content end -->
+
+    <script src="./assets/js/event.js"></script>
+  </body>
+</html>

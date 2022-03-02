@@ -13,20 +13,28 @@
     <header class="font-mono flex bg-cyan-500 justify-between">
         <h1 class="text-3xl">Project-1</h1>
         <nav class="justify-around">
-         <a href="#">Section 1</a>
-         <a href="#">Secton 2</a>
-         <a href="#">Section 3</a> 
+        <a class="hover:text-white" href="./recent.html">Recent</a>
+        <a class="hover:text-white" href="./about.html">About</a>
+        <a class="hover:text-white" href="#">Hotels</a>
         </nav>
     </header>
     <main>
-        <div class="flex-col">
-            <h2>City:</h2>
-            <input class="border-2" type="text" name="" id="city-name">
-            <button id="search-btn" class="bg-cyan-500 rounded-md">Search</button>
-        </div>
+            <form id="search-form" class="flex-col">
+              <h2>City:</h2>
+              <input class="border-2" type="text" placeholder="City Name" id="city-name">
+              <button type="submit" id="search-btn" class="bg-cyan-500 rounded-md hover:text-white hover:bg-cyan-700">Search</button>
+            </form>
 
-        <div id="concerts-container"class="grid gap-4 grid-cols-3 grid-rows-3">
-
+        <div id="concerts-container"class="grid gap-4 grid-cols-3 grid-rows-3 pt-5">
+          <a id="event-1"></a>
+          <a id="event-2"></a>
+          <a id="event-3"></a>
+          <a id="event-4"></a>
+          <a id="event-5"></a>
+          <a id="event-6"></a>
+          <a id="event-7"></a>
+          <a id="event-8"></a>
+          <a id="event-9"></a>
         </div>
     </main>
     

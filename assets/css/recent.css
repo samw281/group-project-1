@@ -1,6 +1,15 @@
+
+body {
+    background-color: #212529;
+}
+
 main {
     margin: auto;
     width: 50%;
+}
+
+header h1 {
+    color: #212529;
 }
 
 #recent-container {
@@ -14,16 +23,19 @@ main {
     font-size: 20px;
     text-decoration: underline;
     text-align: center;
+    color: white;
+}
+
+#recent-1-h2, #recent-2-h2, #recent-3-h2, #recent-4-h2, #recent-5-h2, #recent-6-h2, #recent-7-h2, #recent-8-h2, #recent-9-h2 {
+    color: white;
 }
 
 #recent-1, #recent-2, #recent-3, #recent-4, #recent-5, #recent-6, #recent-7, #recent-8, #recent-9 {
     padding: 17px;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #00bcd4;
 }
 
 #recent-date-1, #recent-date-2, #recent-date-3, #recent-date-4, #recent-date-5, #recent-date-6, #recent-date-7, #recent-date-8, #recent-date-9 {
     float: right;
-    color: #00bcd4;
- 
-
+    color: white;
 } 

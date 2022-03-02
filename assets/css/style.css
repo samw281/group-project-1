@@ -1,17 +1,57 @@
-header {
-    height: 40px;
-    padding: 0 5%;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #212529;
 }
 
-#search-btn, #clear-btn {
+body {
+    background-color: #212529;
+}
+
+header {
+    height: 60px;
+    padding: 0 5%;
+    margin-bottom: 50px;
+    color: #212529;
+}
+
+#search-btn {
     height: 30px;
     width: 70px;
-    border: 2px solid black;
+    border: 2px solid #212529;
 }
 
-/* #event-1:hover, #event-2:hover, #event-3:hover, #event-4:hover, #event-5:hover, #event-6:hover, #event-7:hover, #event-8:hover, #event-9:hover {
-    border: 2px solid #00bcd4;
-    background-color: white;
-    color: black; 
+.slideshow-container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    border: 3px solid #00bcd4;
+    border-radius: 40px;
+}
 
-} */
+.slideshow-slide {
+    display: flex;
+    width: 100%;
+
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 15%;
+    font-size: 40px;
+    cursor: pointer;
+    color: #00bcd4;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 15%;
+    font-size: 40px;
+    cursor: pointer;
+    color: #00bcd4;
+}

@@ -42,3 +42,4 @@ https://samw281.github.io/group-project-1/
 * Sam W (https://github.com/samw281)
 * Jessica K (https://github.com/jessicakallberg)
 * Craig M
+* Josh PDLV (https://github.com/JoshuaPDLV)

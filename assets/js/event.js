@@ -42,17 +42,19 @@ searchForm.addEventListener("submit", function (event) {
             var events = document.createElement("a");
             events.setAttribute(
               "style",
-              "border-radius: 10px; color: white; height: 200px; width: 100%; border: 2px solid #00bcd4;"
+              "border-radius: 10px; color: white; height: 200px; width: 100%; border: 2px solid #00bcd4; text-align: center;"
             );
             events.href = eventsArr[i].url;
-            events.textContent =
-              eventsArr[i].name +
-              "  -  " +
-              eventsArr[i].dates.start.localDate.substring(5, 10) +
-              "-" +
-              eventsArr[0].dates.start.localDate.substring(0, 4);
             events.style.backgroundImage =
               "url('" + eventsArr[i].images[0].url + "')";
+            var eventsH2 = document.createElement("h2")
+            eventsH2.textContent = eventsArr[i].name +
+            "  -  " +
+            eventsArr[i].dates.start.localDate.substring(5, 10) +
+            "-" +
+            eventsArr[0].dates.start.localDate.substring(0, 4);
+            eventsH2.classList.add("events-text")
+            events.appendChild(eventsH2);
             concertsContainer.appendChild(events);
           }
 

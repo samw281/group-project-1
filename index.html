@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d88746a44a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Project</title>
-    <link rel="shortcut icon" href="./assets/images/guitar-icon.png">
-</head>
-<body>
+    <link rel="shortcut icon" href="./assets/images/guitar-icon.png" />
+  </head>
+  <body>
+    <!-- header start -->
     <header class="font-mono flex bg-cyan-500 justify-between">
-        <h1 class="text-3xl">Project-1</h1>
-        <nav class="justify-around">
-         <a href="#">Section 1</a>
-         <a href="#">Secton 2</a>
-         <a href="#">Section 3</a> 
-        </nav>
+      <h1 class="text-3xl">Project-1</h1>
+      <nav class="justify-around">
+        <a class="hover:text-white" href="./recent.html">Recent</a>
+        <a class="hover:text-white" href="./events.html">Events</a>
+        <a class="hover:text-white" href="#">Hotels</a>
+      </nav>
     </header>
-    <main>
-        <div class="flex-col">
-            <h2>City:</h2>
-            <input class="border-2" type="text" name="" id="city-name">
-            <button id="search-btn" class="bg-cyan-500 rounded-md">Search</button>
-        </div>
+    <!-- header end -->
 
-        <div id="concerts-container"class="grid gap-4 grid-cols-3 grid-rows-3">
-
-        </div>
+    <!-- main content start -->
+    <main class="slideshow-container">
+      <i class="fa-solid fa-angles-left" id="prevBtn"></i>
+      <i class="fa-solid fa-angles-right" id="nextBtn"></i>
+      <div class="slideshow-slide">
+        <img src="./assets/images/image12.jpg" id="lastClone" alt="" />
+        <img src="./assets/images/image1.jpg" alt="" />
+        <img src="./assets/images/image2.jpg" alt="" />
+        <img src="./assets/images/image3.jpg" alt="" />
+        <img src="./assets/images/image4.jpg" alt="" />
+        <img src="./assets/images/image5.jpg" alt="" />
+        <img src="./assets/images/image6.jpg" alt="" />
+        <img src="./assets/images/image7.jpg" alt="" />
+        <img src="./assets/images/image8.jpg" alt="" />
+        <img src="./assets/images/image9.jpg" alt="" />
+        <img src="./assets/images/image10.jpg" alt="" />
+        <img src="./assets/images/image11.jpg" alt="" />
+        <img src="./assets/images/image12.jpg" alt="" />
+        <img src="./assets/images/image1.jpg" id="firstClone" alt="" />
+      </div>
     </main>
-    
-    
+    <!-- main content end -->
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This is a group project in which we were tasked to collaboratively use the skills we have learned over the past 6 weeks to create a front end application. Requirements for this project incluced:
+This is a group project in which we were tasked to collaboratively use the skills we have learned over the past 6 weeks to create a front end application. Requirements for this project included:
 
 1. Use a CSS framework other than Bootstrap.
 
@@ -42,3 +42,4 @@ https://samw281.github.io/group-project-1/
 * Sam W (https://github.com/samw281)
 * Jessica K (https://github.com/jessicakallberg)
 * Craig M
+* Josh PDLV (https://github.com/JoshuaPDLV)

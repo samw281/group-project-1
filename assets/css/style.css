@@ -1,8 +1,61 @@
-header {
-    height: 40px;
-    padding: 0 5%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #212529;
 }
 
+body {
+  background-color: #212529;
+}
+
+/* styles for header */
+header {
+  height: 60px;
+  padding: 0 5%;
+  margin-bottom: 50px;
+  color: #212529;
+}
+/* styles for search button */
 #search-btn {
-    width: 70px;
+  height: 30px;
+  width: 70px;
+  border: 2px solid #212529;
+}
+
+/* styles for slideshow container */
+.slideshow-container {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+  border: 3px solid #00bcd4;
+  border-radius: 40px;
+}
+
+/* styles for slideshow slide container */
+.slideshow-slide {
+  display: flex;
+  width: 100%;
+}
+
+/* styles for previous button */
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 15%;
+  font-size: 40px;
+  cursor: pointer;
+  color: #00bcd4;
+}
+
+/* styles for next button */
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 15%;
+  font-size: 40px;
+  cursor: pointer;
+  color: #00bcd4;
 }

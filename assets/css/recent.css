@@ -1,0 +1,88 @@
+body {
+  background-color: #212529;
+}
+
+main {
+  margin: auto;
+  width: 50%;
+}
+
+header {
+  height: 50px;
+  padding: 0 5%;
+  color: #212529;
+  
+}
+
+/* style for container holding all recent events */
+#recent-container {
+  margin: auto;
+  width: 50%;
+  padding-top: 20px;
+}
+
+/* styles for h1 element */
+#recent-city {
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+}
+
+/* style for each recent event name */
+#recent-1-h2,
+#recent-2-h2,
+#recent-3-h2,
+#recent-4-h2,
+#recent-5-h2,
+#recent-6-h2,
+#recent-7-h2,
+#recent-8-h2,
+#recent-9-h2 {
+  color: white;
+}
+
+/* styles for each individual recent event container */
+#recent-1,
+#recent-2,
+#recent-3,
+#recent-4,
+#recent-5,
+#recent-6,
+#recent-7,
+#recent-8,
+#recent-9 {
+  padding: 17px;
+  border-bottom: 1px solid #00bcd4;
+}
+
+/* styles for each recent event date */
+#recent-date-1,
+#recent-date-2,
+#recent-date-3,
+#recent-date-4,
+#recent-date-5,
+#recent-date-6,
+#recent-date-7,
+#recent-date-8,
+#recent-date-9 {
+  float: right;
+  color: white;
+}
+
+
+@media(max-width: 768px) {
+
+  main {
+    margin: auto;
+    width: 95%;
+  }
+  
+  #recent-container {
+    margin: auto;
+    width: 95%;
+    padding-top: 20px;
+  }
+  
+}

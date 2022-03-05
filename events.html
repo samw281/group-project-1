@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/events.css" />
+    <script
+      src="https://kit.fontawesome.com/d88746a44a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="font-mono flex bg-cyan-500 justify-between">
+        <h1 class="text-3xl">Events</h1>
+        <div class="justify-around">
+          <a class="hover:text-white" href="./recent.html">Recent</a>
+          <a class="hover:text-white" href="./index.html">Home</a>
+          <a class="hover:text-white" href="#">Hotels</a>
+        </div>
+      
+    </header>
+    <!-- header end -->
+
+    <!-- main content start -->
+    <main>
+      <form id="search-form" class="flex-col">
+        <h2 class="text-cyan-500 top-20">Search For A City:</h2>
+        <input
+          class="border-2"
+          type="text"
+          placeholder="City Name"
+          id="city-name"
+        />
+        <button
+          type="submit"
+          id="search-btn"
+          class="bg-cyan-500 rounded-md hover:text-white hover:bg-cyan-700"
+        >
+          Search
+        </button>
+      </form>
+      <div
+        id="concerts-container"
+        class="grid gap-6 grid-cols-1 grid-rows-9 px-2 pt-5 md:gap-6 md:grid-cols-3 md:grid-rows-3"
+      ></div>
+    </main>
+    <!-- main content end -->
+
+    <script src="./assets/js/event.js"></script>
+  </body>
+</html>

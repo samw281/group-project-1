@@ -3,8 +3,25 @@ body {
 }
 
 .events-text {
+
+  color: #00bcd4;
+  font-size:large;
+  font-weight: 400;
+  background-color:#212529;
+  border-radius: 30px;
+}
+
+header {
+  height: 50px;
+  padding: 0 5%;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+
   color: white;
   -webkit-text-stroke: 2px #212529;
   font-size: larger;
   font-weight: 800;
 }
+

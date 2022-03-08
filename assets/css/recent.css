@@ -7,11 +7,16 @@ main {
   width: 50%;
 }
 
+
 header {
   height: 50px;
   padding: 0 5%;
   color: #212529;
   
+
+header h1 {
+  color: #212529;
+
 }
 
 /* style for container holding all recent events */
@@ -86,3 +91,4 @@ header {
   }
   
 }
+

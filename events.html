@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
@@ -19,11 +20,15 @@
     }
   }
 </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="./assets/css/events.css" />
     <script
       src="https://kit.fontawesome.com/d88746a44a.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Events</title>
     <link rel="shortcut icon" href="./assets/images/guitar-icon.png" />
   </head>
@@ -44,6 +49,27 @@
     <main>
       <form id="search-form" class="flex-col">
         <h2 class="text-cyan-500 top-20">Search For A City:</h2>
+        
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="flex bg-cyan-500 justify-center">
+      <h1 class="text-3xl">Events</h1>
+    </header>
+    <!-- header end -->
+
+    <!-- back button start -->
+    <a class="text-cyan-500 text-xl" href="./index.html">
+      <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+    <!-- back button end -->
+
+    <!-- main content start -->
+    <main>
+      <form id="search-form" class="flex-col">
+        <h2 class="text-cyan-500">Search For A City:</h2>
+
         <input
           class="border-2"
           type="text"
@@ -60,10 +86,15 @@
       </form>
       <div
         id="concerts-container"
+
         class="grid gap-6 grid-cols-1 grid-rows-9 px-2 pt-5 md:gap-6 md:grid-cols-3 md:grid-rows-3"
+
+        class="grid gap-6 grid-cols-3 grid-rows-3 pt-5"
+
       ></div>
     </main>
     <!-- main content end -->
+
 
     <!-- Button trigger modal -->
 <button type="button" class="
@@ -127,6 +158,7 @@ class="modal-content border-none shadow-lg relative flex flex-col w-full pointer
 </div>
     
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
     <script src="./assets/js/event.js"></script>
   </body>
 </html>

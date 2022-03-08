@@ -124,12 +124,13 @@ searchForm.addEventListener("submit", function (event) {
               "-" +
               eventsArr[8].dates.start.localDate.substring(0, 4)
           );
-        });
+        })
       } else {
         //   alerts need to be converted to modals
         alert("Error: City Not Found");
       }
     })
+    
     .catch(function (error) {
       //   alerts need to be converted to modals
       alert("Unable to connect to Project-1");

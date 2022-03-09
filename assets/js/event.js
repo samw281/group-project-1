@@ -3,10 +3,13 @@ var cityName = document.getElementById("city-name");
 var searchBtn = document.getElementById("search-btn");
 var clearBtn = document.getElementById("clear-btn");
 var searchForm = document.getElementById("search-form");
-var modal = document.getElementById("modal")
+var modal = document.getElementById("modal");
+var modalBtn = document.getElementById("modal-button");
 
 
-
+modalBtn.addEventListener("click", function() {
+  modal.classList.add("hidden")
+});
 // event listener to fetch data from tickemaster api and display on the page
 searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -22,9 +25,9 @@ searchForm.addEventListener("submit", function (event) {
         console.log(response);
         response.json().then(function (data) {
           console.log(data);
-          if(!data._embedded.length) {
+          if(!data._embedded) {
             modal.classList.remove("hidden")
-            
+            return;
          }
           console.log(data._embedded.events);
           console.log(data._embedded.events[0].name);

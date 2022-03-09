@@ -57,6 +57,27 @@ searchForm.addEventListener("submit", function (event) {
             events.appendChild(eventsH2);
             concertsContainer.appendChild(events);
           }
+           // stores event names to local storage
+           localStorage.setItem("event-1-h2", eventsArr[0].name) 
+           localStorage.setItem("event-2-h2", eventsArr[1].name) 
+           localStorage.setItem("event-3-h2", eventsArr[2].name) 
+           localStorage.setItem("event-4-h2", eventsArr[3].name) 
+           localStorage.setItem("event-5-h2", eventsArr[4].name) 
+           localStorage.setItem("event-6-h2", eventsArr[5].name) 
+           localStorage.setItem("event-7-h2", eventsArr[6].name) 
+           localStorage.setItem("event-8-h2", eventsArr[7].name) 
+           localStorage.setItem("event-9-h2", eventsArr[8].name)
+ 
+             // stores formated dates to local storage
+           localStorage.setItem("event-1-date", eventsArr[0].dates.start.localDate.substring(5,10) +"-"+ eventsArr[0].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-2-date", eventsArr[1].dates.start.localDate.substring(5,10) +"-"+ eventsArr[1].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-3-date", eventsArr[2].dates.start.localDate.substring(5,10) +"-"+ eventsArr[2].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-4-date", eventsArr[3].dates.start.localDate.substring(5,10) +"-"+ eventsArr[3].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-5-date", eventsArr[4].dates.start.localDate.substring(5,10) +"-"+ eventsArr[4].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-6-date", eventsArr[5].dates.start.localDate.substring(5,10) +"-"+ eventsArr[5].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-7-date", eventsArr[6].dates.start.localDate.substring(5,10) +"-"+ eventsArr[6].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-8-date", eventsArr[7].dates.start.localDate.substring(5,10) +"-"+ eventsArr[7].dates.start.localDate.substring(0,4))
+           localStorage.setItem("event-9-date", eventsArr[8].dates.start.localDate.substring(5,10) +"-"+ eventsArr[8].dates.start.localDate.substring(0,4))
 
         })
 

@@ -35,11 +35,11 @@
   <body>
     
     <header class="font-mono flex bg-cyan-500 justify-between">
-        <h1 class="text-3xl">Events</h1>
+        <h1 class="text-3xl font-mono">Events</h1>
         <div class="justify-around">
-          <a class="hover:text-white" href="./recent.html">Recent</a>
-          <a class="hover:text-white" href="./index.html">Home</a>
-          <a class="hover:text-white" href="#">Hotels</a>
+          <a class="hover:text-white text-xl" href="./recent.html">Recent</a>
+          <a class="hover:text-white text-xl" href="./index.html">Home</a>
+          <a class="hover:text-white text-xl" href="#">Hotels</a>
         </div>
       
     </header>
@@ -48,11 +48,11 @@
 
     <!-- main content start -->
     <main>
-      <form id="search-form" class="flex-col">
-        <h2 class="text-cyan-500">Search For A City:</h2>
+      <form id="search-form" class="flex-col pl-14">
+        <h2 class="text-cyan-500 font-mono">Search For A City:</h2>
 
         <input
-          class="border-2"
+          class="border-2 rounded-md"
           type="text"
           placeholder="City Name"
           id="city-name"
@@ -60,7 +60,7 @@
         <button
           type="submit"
           id="search-btn"
-          class="bg-cyan-500 rounded-md hover:text-white hover:bg-cyan-700"
+          class="bg-cyan-500 rounded-md text-lg hover:text-white hover:bg-cyan-700"
         >
           Search
         </button>

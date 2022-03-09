@@ -20,19 +20,22 @@ var recent7H2 = document.getElementById("recent-7-h2");
 var recent8H2 = document.getElementById("recent-8-h2");
 var recent9H2 = document.getElementById("recent-9-h2");
 
-var cityName = localStorage.getItem("cityName")
+// gets city name for last search from local storage
+var cityName = localStorage.getItem("cityName");
 
-recentCity.textContent = cityName.toUpperCase()
+// formats city name to be in all caps incase a user inputs lowercase or mixed case
+recentCity.textContent = cityName.toUpperCase();
 
-recent1H2.textContent = localStorage.getItem("event-1-h2")
-recent2H2.textContent = localStorage.getItem("event-2-h2")
-recent3H2.textContent = localStorage.getItem("event-3-h2")
-recent4H2.textContent = localStorage.getItem("event-4-h2")
-recent5H2.textContent = localStorage.getItem("event-5-h2")
-recent6H2.textContent = localStorage.getItem("event-6-h2")
-recent7H2.textContent = localStorage.getItem("event-7-h2")
-recent8H2.textContent = localStorage.getItem("event-8-h2")
-recent9H2.textContent = localStorage.getItem("event-9-h2")
+// gets event names for the last search from local storage
+recent1H2.textContent = localStorage.getItem("event-1-h2");
+recent2H2.textContent = localStorage.getItem("event-2-h2");
+recent3H2.textContent = localStorage.getItem("event-3-h2");
+recent4H2.textContent = localStorage.getItem("event-4-h2");
+recent5H2.textContent = localStorage.getItem("event-5-h2");
+recent6H2.textContent = localStorage.getItem("event-6-h2");
+recent7H2.textContent = localStorage.getItem("event-7-h2");
+recent8H2.textContent = localStorage.getItem("event-8-h2");
+recent9H2.textContent = localStorage.getItem("event-9-h2");
 
 var recent1Date = document.getElementById("recent-date-1");
 var recent2Date = document.getElementById("recent-date-2");
@@ -44,6 +47,7 @@ var recent7Date = document.getElementById("recent-date-7");
 var recent8Date = document.getElementById("recent-date-8");
 var recent9Date = document.getElementById("recent-date-9");
 
+// gets event dates for the last search from local storage
 recent1Date.textContent = localStorage.getItem("event-1-date");
 recent2Date.textContent = localStorage.getItem("event-2-date");
 recent3Date.textContent = localStorage.getItem("event-3-date");

@@ -5,6 +5,8 @@ var clearBtn = document.getElementById("clear-btn");
 var searchForm = document.getElementById("search-form");
 var modal = document.getElementById("modal");
 var modalBtn = document.getElementById("modal-button");
+var modalText1 = document.getElementById("modal-text-1");
+var modalText2 = document.getElementById("modal-text-2");
 
 
 modalBtn.addEventListener("click", function() {
@@ -27,6 +29,8 @@ searchForm.addEventListener("submit", function (event) {
           console.log(data);
           if(!data._embedded) {
             modal.classList.remove("hidden")
+            modalText1.textContent = "ERROR City not found."
+            modalText2.textContent = "Please try again."
             return;
          }
           console.log(data._embedded.events);
@@ -81,15 +85,13 @@ searchForm.addEventListener("submit", function (event) {
 
         })
 
-      } else {
-        //   alerts need to be converted to modals
-      }
+      } 
     })
 
-    
-
     .catch(function (error) {
-      //   alerts need to be converted to modals
-      alert("Unable to connect to Project-1");
+        modal.classList.remove("hidden")
+        modalText1.textContent = "ERROR Couldn't connect"
+        modalText2.textContent = "to trip planner."
+        return;
     });
 });

@@ -29,6 +29,8 @@ This is a group project in which we were tasked to collaboratively use the skill
 * HTML
 * CSS
 * JavaScript
+* Font Awesome
+* Tailwind
 
 ## Website
 
@@ -39,7 +41,7 @@ https://samw281.github.io/group-project-1/
 
 ## Contributions
 
-* Sam W (https://github.com/samw281)
-* Jessica K (https://github.com/jessicakallberg)
-* Craig M
-* Josh PDLV (https://github.com/JoshuaPDLV)
+* Sam W - https://github.com/samw281
+* Jessica K - https://github.com/jessicakallberg
+* Craig M - https://github.com/CrMaguire
+* Josh PDLV - https://github.com/JoshuaPDLV

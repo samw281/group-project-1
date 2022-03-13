@@ -3,6 +3,7 @@ var cityName = document.getElementById("city-name");
 var searchBtn = document.getElementById("search-btn");
 var searchForm = document.getElementById("search-form");
 
+
 // event listener to fetch data from hotels api and display on the page
 searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -23,6 +24,4 @@ searchForm.addEventListener("submit", function (event) {
   .catch(err => {
     console.error(err);
   });
-
-
 });

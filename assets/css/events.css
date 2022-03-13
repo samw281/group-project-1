@@ -3,7 +3,7 @@ body {
 }
 
 .events-text {
-
+  text-align: center;
   color: #00bcd4;
   font-size:large;
   font-weight: 400;
@@ -11,12 +11,12 @@ body {
   border-radius: 30px;
 }
 
-header {
+/* header {
   height: 50px;
   padding: 0 5%;
   color: #212529;
   margin-bottom: 10px;
-}
+} */
 
 
 

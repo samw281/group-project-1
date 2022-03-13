@@ -1,7 +1,6 @@
 var concertsContainer = document.getElementById("concerts-container");
 var cityName = document.getElementById("city-name");
 var searchBtn = document.getElementById("search-btn");
-var clearBtn = document.getElementById("clear-btn");
 var searchForm = document.getElementById("search-form");
 var modal = document.getElementById("modal");
 var modalBtn = document.getElementById("modal-button");
@@ -49,15 +48,13 @@ searchForm.addEventListener("submit", function (event) {
           var events = document.createElement("a");
           events.setAttribute(
             "style",
-            "border-radius: 10px; color: white; height: 200px; width: 100%; border: 2px solid #00bcd4;"
+            "border-radius: 10px; color: white; height: 200px; width: 100%; border: 2px solid #00bcd4"
           );
+          var eventsText = document.createElement("p")
+          events.appendChild(eventsText);
+          eventsText.textContent = eventsArr[i].name +"  -  " + eventsArr[i].dates.start.localDate.substring(5, 10) + "-" + eventsArr[0].dates.start.localDate.substring(0, 4);
+          eventsText.classList.add("events-text");
           events.href = eventsArr[i].url;
-          events.textContent =
-            eventsArr[i].name +
-            "  -  " +
-            eventsArr[i].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[0].dates.start.localDate.substring(0, 4);
           events.style.backgroundImage =
             "url('" + eventsArr[i].images[0].url + "')";
           concertsContainer.appendChild(events);
@@ -72,62 +69,6 @@ searchForm.addEventListener("submit", function (event) {
         localStorage.setItem("event-7-h2", eventsArr[6].name);
         localStorage.setItem("event-8-h2", eventsArr[7].name);
         localStorage.setItem("event-9-h2", eventsArr[8].name);
-
-        // stores formated dates to local storage
-        localStorage.setItem(
-          "event-1-date",
-          eventsArr[0].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[0].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-2-date",
-          eventsArr[1].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[1].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-3-date",
-          eventsArr[2].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[2].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-4-date",
-          eventsArr[3].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[3].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-5-date",
-          eventsArr[4].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[4].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-6-date",
-          eventsArr[5].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[5].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-7-date",
-          eventsArr[6].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[6].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-8-date",
-          eventsArr[7].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[7].dates.start.localDate.substring(0, 4)
-        );
-        localStorage.setItem(
-          "event-9-date",
-          eventsArr[8].dates.start.localDate.substring(5, 10) +
-            "-" +
-            eventsArr[8].dates.start.localDate.substring(0, 4)
-        );
 
         // stores formated dates to local storage
         localStorage.setItem(

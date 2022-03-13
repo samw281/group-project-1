@@ -4,11 +4,11 @@ var searchBtn = document.getElementById("search-btn");
 var searchForm = document.getElementById("search-form");
 const geoUrl = "https://ip-geo-location.p.rapidapi.com/ip/check?format=json&language=en"
 
-const priceLineUrl ="https://priceline-com-provider.p.rapidapi.com/v1/hotels/search?date_checkin=2022-06-17&location_id=3000035821&date_checkout=2022-06-18&sort_order=HDR&amenities_ids=FINTRNT%2CFBRKFST&rooms_number=1&star_rating_ids=3.0%2C3.5%2C4.0%2C4.5%2C5.0"
+const airBnbUrl ="https://airbnb13.p.rapidapi.com/autocomplete?query=city" + cityName.value
 
-const geoHost = "ip-geo-location.p.rapidapi.com"
+const geoHost = "ip-geo-location.p.rapidapi.com/"
 
-const priceLineHost = "priceline-com-provider.p.rapidapi.com"
+const airBnbHost = "airbnb13.p.rapidapi.com"
 
 const rapidApiKey = "a1f1e4f2a3msh6da74de769912dcp109e5ajsn6e99b5c4d1d2"
 
@@ -36,17 +36,19 @@ const getData = async (url,host) => {
 
 const runApiQueries = async () => {
   //get city name
-  const geoData = await getData(geoUrl, geoHost);
-  console.log(geoData);
+  const airBnbData = await getData(airBnbUrl, airBnbHost);
+  console.log(airBnbData);
 
-  //Get hotels by location 
-  const priceLineData = await getData(
-    priceLineUrl + geoData.city.name,
-    priceLineHost
-  );
-    console.log(priceLineData);
+//   console.log(airBnbUrl + geoData.city.name)
+
+//   //Get hotels by location 
+//   const airBnbData = await getData(
+//     airBnbUrl + geoData.city.name,
+//     airBnbHost
+//   );
+//     console.log(airBnbData);
 };
 
 runApiQueries();
 
- });
+});

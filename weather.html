@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/weather.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-mono">
+    <!-- header start -->
+  <header class="font-mono flex bg-cyan-500 justify-between">
+    <h1 class="text-2xl">Weather</h1>
+    <nav class="justify-around">
+      <a class="hover:text-white" href="./index.html">Home</a>
+      <a class="hover:text-white" href="./events.html">Events</a>
+      <a class="hover:text-white" href="./recent.html">Recent</a>
+      <a class="hover:text-white" href="./hotels.html">Hotels</a>
+    </nav>
+  </header>
+  <!-- header end -->
+  <!-- search form start -->
+  <form id="search-form" class="flex-col pb-2">
+    <h2 class="text-cyan-500">Search For A City:</h2>
+    <input
+      class="border-2"
+      type="text"
+      placeholder="City Name"
+      id="city-name"
+    />
+    <button
+      type="submit"
+      id="search-btn"
+      class="bg-cyan-500 rounded-md hover:text-white hover:bg-cyan-700"
+    >
+      Search
+    </button>
+  </form>
+  <!-- search form end -->
+  <!-- current weather start -->
+  <div id="current-container">
+    <h1 class="font-medium m-auto w-9/12 text-center text-white rounded-xl leading-tight text-5xl mt-8 mb-2 bg-cyan-500 border-2 border-white">Current Weather</h1>
+    <div id="current-stats-container" class="text-center m-auto mt-8 md:w-4/12 ">
+        <img id="current-icon" class="m-auto" src="">
+        <p id="temp"></p>
+        <p id="feels-like"></p>
+        <p id="wind"></p>
+        <p id="humidity"></p>
+        <p id="uvi"></p>
+    </div>
+  </div>
+  <!-- current weather end -->
+  <!-- five day forecast start -->
+<div id="five-day-container">
+    <h1 class="font-medium m-auto w-9/12 text-center text-white rounded-xl leading-tight text-5xl mt-8 mb-2 bg-cyan-500 border-2 border-white">Five Day Forecast</h1>
+      <div class="pt-8">
+        <div class="flex flex-col w-screen md:flex-row md:w-screen md:h-full justify-around">
+          <div class="w-full pb-2 md:w-1/6 text-center" id="day-1">
+              <h2 id="day-1-date"></h2>
+              <img class="m-auto" id="day-1-icon" src="">
+               <p id="day-1-high"></p>
+               <p id="day-1-low"></p>
+               <p id="day-1-wind"></p>
+               <p id="day-1-humidity"></p>
+          </div>
+          <div class="w-full md:w-1/6 text-center" id="day-2">
+              <h2 id="day-2-date"></h2>
+              <img class="m-auto" id="day-2-icon" src="">
+                  <p id="day-2-high"></p>
+                  <p id="day-2-low"></p>
+                  <p id="day-2-wind"></p>
+                  <p id="day-2-humidity"></p>
+          </div>
+          <div class="w-full md:w-1/6 text-center" id="day-3">
+              <h2 id="day-3-date"></h2>
+              <img class="m-auto" id="day-3-icon" src="">
+                  <p id="day-3-high"></p>
+                  <p id="day-3-low"></p>
+                  <p id="day-3-wind"></p>
+                  <p id="day-3-humidity"></p>
+          </div>
+          <div class="w-full md:w-1/6 text-center"id="day-4">
+              <h2 id="day-4-date"></h2>
+              <img class="m-auto" id="day-4-icon" src="">
+                  <p id="day-4-high"></p>
+                  <p id="day-4-low"></p>
+                  <p id="day-4-wind"></p>
+                  <p id="day-4-humidity"></p>
+          </div>
+          <div class="w-full md:w-1/6 text-center" id="day-5">
+              <h2 id="day-5-date"></h2>
+              <img class="m-auto" id="day-5-icon" src="">
+                  <p id="day-5-high"></p>
+                  <p id="day-5-low"></p>
+                  <p id="day-5-wind"></p>
+                  <p id="day-5-humidity"></p>
+          </div>
+      </div>
+    </div>
+    <!-- five day forecast end -->
+<!-- modal start -->
+<div id="modal" class="border-2 border-cyan-500 bg-white rounded-md hidden m-auto h-28 w-60">
+    <p id="modal-text-1"class="text-center w-full"></p>
+    <br>
+    <p id="modal-text-2"class="text-center w-full"></p>
+    <button id="modal-button" class="text-cyan-500 float-right mr-2 pt-2">
+      <i class="fa-solid fa-square-xmark"></i>
+    </button>
+  </div>
+ <!-- modal end -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/weather.js"></script>
+</body>
+</html> 

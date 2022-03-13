@@ -43,8 +43,10 @@ var modal = document.getElementById("modal");
 var modalBtn = document.getElementById("modal-button");
 var modalText1 = document.getElementById("modal-text-1");
 var modalText2 = document.getElementById("modal-text-2");
+var mainContent = document.getElementById("main-content");
 modalBtn.addEventListener("click", function () {
     modal.classList.add("hidden");
+    mainContent.classList.remove("hidden");
   });
 searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -61,6 +63,7 @@ searchForm.addEventListener("submit", function (event) {
                 modal.classList.remove("hidden");
                 modalText1.textContent = "ERROR City not found.";
                 modalText2.textContent = "Please try again.";
+                mainContent.classList.add("hidden");
                 return;
               }
           var lat = data[0].lat;
@@ -130,23 +133,27 @@ searchForm.addEventListener("submit", function (event) {
                 modal.classList.remove("hidden");
                 modalText1.textContent = "ERROR City not found.";
                 modalText2.textContent = "Please try again.";
+                mainContent.classList.add("hidden");
               }
             })
             .catch(function(error){
                 modal.classList.remove("hidden");
                 modalText1.textContent = "ERROR Couldn't connect";
                 modalText2.textContent = "to All Inclusive.";
+                mainContent.classList.add("hidden");
             })
         });
       } else {
         modal.classList.remove("hidden");
         modalText1.textContent = "ERROR City not found.";
         modalText2.textContent = "Please try again.";
+        mainContent.classList.add("hidden");
       }
     })
     .catch(function (error) {
         modal.classList.remove("hidden");
         modalText1.textContent = "ERROR Couldn't connect";
         modalText2.textContent = "to All Inclusive.";
+        mainContent.classList.add("hidden");
     });
 });

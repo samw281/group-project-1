@@ -35,87 +35,89 @@
     </nav>
   </header>
   <!-- header end -->
-  <!-- search form start -->
-  <form id="search-form" class="flex-col pb-2">
-    <h2 class="text-cyan-500">Search For A City:</h2>
-    <input
-      class="border-2"
-      type="text"
-      placeholder="City Name"
-      id="city-name"
-    />
-    <button
-      type="submit"
-      id="search-btn"
-      class="bg-cyan-500 rounded-md hover:text-white hover:bg-cyan-700"
-    >
-      Search
-    </button>
-  </form>
-  <!-- search form end -->
-  <!-- current weather start -->
-  <div id="current-container">
-    <h1 class="font-medium m-auto w-9/12 text-center text-white rounded-xl leading-tight text-5xl mt-8 mb-2 bg-cyan-500 border-2 border-white">Current Weather</h1>
-    <div id="current-stats-container" class="text-center m-auto mt-8 md:w-4/12 ">
-        <img id="current-icon" class="m-auto" src="">
-        <p id="temp"></p>
-        <p id="feels-like"></p>
-        <p id="wind"></p>
-        <p id="humidity"></p>
-        <p id="uvi"></p>
-    </div>
-  </div>
-  <!-- current weather end -->
-  <!-- five day forecast start -->
-<div id="five-day-container">
-    <h1 class="font-medium m-auto w-9/12 text-center text-white rounded-xl leading-tight text-5xl mt-8 mb-2 bg-cyan-500 border-2 border-white">Five Day Forecast</h1>
-      <div class="pt-8">
-        <div class="flex flex-col w-screen md:flex-row md:w-screen md:h-full justify-around">
-          <div class="w-full pb-2 md:w-1/6 text-center" id="day-1">
-              <h2 id="day-1-date"></h2>
-              <img class="m-auto" id="day-1-icon" src="">
-               <p id="day-1-high"></p>
-               <p id="day-1-low"></p>
-               <p id="day-1-wind"></p>
-               <p id="day-1-humidity"></p>
-          </div>
-          <div class="w-full md:w-1/6 text-center" id="day-2">
-              <h2 id="day-2-date"></h2>
-              <img class="m-auto" id="day-2-icon" src="">
-                  <p id="day-2-high"></p>
-                  <p id="day-2-low"></p>
-                  <p id="day-2-wind"></p>
-                  <p id="day-2-humidity"></p>
-          </div>
-          <div class="w-full md:w-1/6 text-center" id="day-3">
-              <h2 id="day-3-date"></h2>
-              <img class="m-auto" id="day-3-icon" src="">
-                  <p id="day-3-high"></p>
-                  <p id="day-3-low"></p>
-                  <p id="day-3-wind"></p>
-                  <p id="day-3-humidity"></p>
-          </div>
-          <div class="w-full md:w-1/6 text-center"id="day-4">
-              <h2 id="day-4-date"></h2>
-              <img class="m-auto" id="day-4-icon" src="">
-                  <p id="day-4-high"></p>
-                  <p id="day-4-low"></p>
-                  <p id="day-4-wind"></p>
-                  <p id="day-4-humidity"></p>
-          </div>
-          <div class="w-full md:w-1/6 text-center" id="day-5">
-              <h2 id="day-5-date"></h2>
-              <img class="m-auto" id="day-5-icon" src="">
-                  <p id="day-5-high"></p>
-                  <p id="day-5-low"></p>
-                  <p id="day-5-wind"></p>
-                  <p id="day-5-humidity"></p>
-          </div>
+  <main id="main-content">
+    <!-- search form start -->
+    <form id="search-form" class="flex-col pb-2">
+      <h2 class="text-cyan-500">Search For A City:</h2>
+      <input
+        class="border-2"
+        type="text"
+        placeholder="City Name"
+        id="city-name"
+      />
+      <button
+        type="submit"
+        id="search-btn"
+        class="bg-cyan-500 rounded-md hover:text-white hover:bg-cyan-700"
+      >
+        Search
+      </button>
+    </form>
+    <!-- search form end -->
+    <!-- current weather start -->
+    <div id="current-container">
+      <h1 class="font-medium m-auto w-3/5 text-center text-white rounded-xl leading-tight text-5xl mt-8 mb-2 bg-cyan-500 border-2 border-white">Current Weather</h1>
+      <div id="current-stats-container" class="text-center m-auto mt-8 md:w-4/12 ">
+          <img id="current-icon" class="m-auto" src="">
+          <p id="temp"></p>
+          <p id="feels-like"></p>
+          <p id="wind"></p>
+          <p id="humidity"></p>
+          <p id="uvi"></p>
       </div>
     </div>
-    <!-- five day forecast end -->
+    <!-- current weather end -->
+    <!-- five day forecast start -->
+  <div id="five-day-container">
+      <h1 class="font-medium m-auto w-9/12 text-center text-white rounded-xl leading-tight text-5xl mt-8 mb-2 bg-cyan-500 border-2 border-white">Five Day Forecast</h1>
+        <div class="pt-8">
+          <div class="flex flex-col w-screen md:flex-row md:w-screen md:h-full justify-around">
+            <div class="w-full pb-2 md:w-1/6 text-center" id="day-1">
+                <h2 id="day-1-date"></h2>
+                <img class="m-auto" id="day-1-icon" src="">
+                 <p id="day-1-high"></p>
+                 <p id="day-1-low"></p>
+                 <p id="day-1-wind"></p>
+                 <p id="day-1-humidity"></p>
+            </div>
+            <div class="w-full md:w-1/6 text-center" id="day-2">
+                <h2 id="day-2-date"></h2>
+                <img class="m-auto" id="day-2-icon" src="">
+                    <p id="day-2-high"></p>
+                    <p id="day-2-low"></p>
+                    <p id="day-2-wind"></p>
+                    <p id="day-2-humidity"></p>
+            </div>
+            <div class="w-full md:w-1/6 text-center" id="day-3">
+                <h2 id="day-3-date"></h2>
+                <img class="m-auto" id="day-3-icon" src="">
+                    <p id="day-3-high"></p>
+                    <p id="day-3-low"></p>
+                    <p id="day-3-wind"></p>
+                    <p id="day-3-humidity"></p>
+            </div>
+            <div class="w-full md:w-1/6 text-center"id="day-4">
+                <h2 id="day-4-date"></h2>
+                <img class="m-auto" id="day-4-icon" src="">
+                    <p id="day-4-high"></p>
+                    <p id="day-4-low"></p>
+                    <p id="day-4-wind"></p>
+                    <p id="day-4-humidity"></p>
+            </div>
+            <div class="w-full md:w-1/6 text-center" id="day-5">
+                <h2 id="day-5-date"></h2>
+                <img class="m-auto" id="day-5-icon" src="">
+                    <p id="day-5-high"></p>
+                    <p id="day-5-low"></p>
+                    <p id="day-5-wind"></p>
+                    <p id="day-5-humidity"></p>
+            </div>
+        </div>
+      </div>
+      <!-- five day forecast end -->
+  </main>
 <!-- modal start -->
-<div id="modal" class="border-2 border-cyan-500 bg-white rounded-md hidden m-auto h-28 w-60">
+<div id="modal" class="border-2 border-cyan-500 bg-white rounded-md hidden m-auto h-28 w-60 mt-28">
     <p id="modal-text-1"class="text-center w-full"></p>
     <br>
     <p id="modal-text-2"class="text-center w-full"></p>

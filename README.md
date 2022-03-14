@@ -21,6 +21,7 @@ https://samw281.github.io/group-project-1/
 
 ## Usage 
 
+You are able to use on desktop or mobile site, to search events, book hotels and even check out weather.
 
 
 
